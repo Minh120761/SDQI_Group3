@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210502 18:49:30.751" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\data\4-2\webapp\preetham\final\test.robot">
+<test id="s1-t1" name="1. Open Website">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210502 18:49:31.088" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8081/cov/'.</msg>
+<status status="PASS" starttime="20210502 18:49:31.087" endtime="20210502 18:49:34.256"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210502 18:49:34.257" endtime="20210502 18:49:34.400"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210502 18:49:34.401" endtime="20210502 18:49:34.402"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:31.086" endtime="20210502 18:49:34.403"/>
+</test>
+<test id="s1-t2" name="2. open dashboard">
+<kw name="Click Link" library="Selenium2Library">
+<arg>//*[@id="navbarNav"]/ul/li[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:34.407" level="INFO">Clicking link '//*[@id="navbarNav"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210502 18:49:34.406" endtime="20210502 18:49:35.453"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.9</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210502 18:49:35.454" endtime="20210502 18:49:35.454"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:34.405" endtime="20210502 18:49:35.455"/>
+</test>
+<test id="s1-t3" name="3. check the page">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Covid Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210502 18:49:36.380" level="INFO">Page title is 'Covid Dashboard'.</msg>
+<status status="PASS" starttime="20210502 18:49:35.465" endtime="20210502 18:49:36.380"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:35.462" endtime="20210502 18:49:36.381"/>
+</test>
+<test id="s1-t4" name="4. open myth">
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath://*[@id="navbarNav"]/ul/li[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:36.386" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20210502 18:49:36.386" endtime="20210502 18:49:39.361"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.9</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210502 18:49:39.364" endtime="20210502 18:49:39.366"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:36.385" endtime="20210502 18:49:39.367"/>
+</test>
+<test id="s1-t5" name="5. check the page">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Covid Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210502 18:49:40.309" level="INFO">Page title is 'Covid Dashboard'.</msg>
+<status status="PASS" starttime="20210502 18:49:39.375" endtime="20210502 18:49:40.309"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:39.373" endtime="20210502 18:49:40.310"/>
+</test>
+<test id="s1-t6" name="6. open facts">
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath://*[@id="navbarNav"]/ul/li[3]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:40.315" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20210502 18:49:40.314" endtime="20210502 18:49:43.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210502 18:49:45.283" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210502 18:49:43.268" endtime="20210502 18:49:45.285"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:40.313" endtime="20210502 18:49:45.290"/>
+</test>
+<test id="s1-t7" name="7. check the page">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Covid Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210502 18:49:46.233" level="INFO">Page title is 'Covid Dashboard'.</msg>
+<status status="PASS" starttime="20210502 18:49:45.310" endtime="20210502 18:49:46.234"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:45.304" endtime="20210502 18:49:46.237"/>
+</test>
+<test id="s1-t8" name="8. open Login">
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath://*[@id="navbarNav"]/ul/li[4]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:46.263" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20210502 18:49:46.261" endtime="20210502 18:49:49.181"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:46.251" endtime="20210502 18:49:49.184"/>
+</test>
+<test id="s1-t9" name="9. clear the value">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:email</arg>
+<arg>test@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:49.210" level="INFO">Typing text 'test@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20210502 18:49:49.209" endtime="20210502 18:49:52.344"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210502 18:49:57.350" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210502 18:49:52.347" endtime="20210502 18:49:57.350"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>xpath://*[@id="Email"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210502 18:49:57.352" endtime="20210502 18:49:59.332"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:49.196" endtime="20210502 18:49:59.334"/>
+</test>
+<test id="s1-t10" name="10. check Login">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:email</arg>
+<arg>vineelamvmp@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:49:59.345" level="INFO">Typing text 'vineelamvmp@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20210502 18:49:59.344" endtime="20210502 18:50:02.394"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:password</arg>
+<arg>book22</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:02.397" level="INFO">Typing text 'book22' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20210502 18:50:02.396" endtime="20210502 18:50:05.441"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:05.444" level="INFO">Clicking element 'xpath://*[@id="login"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:05.444" endtime="20210502 18:50:07.727"/>
+</kw>
+<status status="PASS" starttime="20210502 18:49:59.341" endtime="20210502 18:50:07.731"/>
+</test>
+<test id="s1-t11" name="11. check the page">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Covid Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210502 18:50:08.693" level="INFO">Page title is 'Covid Dashboard'.</msg>
+<status status="PASS" starttime="20210502 18:50:07.755" endtime="20210502 18:50:08.694"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:07.739" endtime="20210502 18:50:08.698"/>
+</test>
+<test id="s1-t12" name="12. add myth">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="myth"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:08.736" level="INFO">Clicking element 'xpath://*[@id="myth"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:08.734" endtime="20210502 18:50:10.762"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:08.714" endtime="20210502 18:50:10.765"/>
+</test>
+<test id="s1-t13" name="13. check page">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Covid Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210502 18:50:11.723" level="INFO">Page title is 'Covid Dashboard'.</msg>
+<status status="PASS" starttime="20210502 18:50:10.790" endtime="20210502 18:50:11.723"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:10.777" endtime="20210502 18:50:11.726"/>
+</test>
+<test id="s1-t14" name="14. enter data check">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:mythname</arg>
+<arg>covidisgood</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:11.749" level="INFO">Typing text 'covidisgood' into text field 'name:mythname'.</msg>
+<status status="PASS" starttime="20210502 18:50:11.748" endtime="20210502 18:50:14.778"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:mythdes</arg>
+<arg>nothing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:14.780" level="INFO">Typing text 'nothing' into text field 'name:mythdes'.</msg>
+<status status="PASS" starttime="20210502 18:50:14.779" endtime="20210502 18:50:17.826"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210502 18:50:22.842" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210502 18:50:17.828" endtime="20210502 18:50:22.843"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>xpath://*[@id="mythname"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210502 18:50:22.845" endtime="20210502 18:50:24.762"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>xpath://*[@id="mythdes"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210502 18:50:24.763" endtime="20210502 18:50:26.700"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:11.739" endtime="20210502 18:50:26.702"/>
+</test>
+<test id="s1-t15" name="15. go back">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="bac"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:26.714" level="INFO">Clicking element 'xpath://*[@id="bac"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:26.713" endtime="20210502 18:50:28.957"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:26.711" endtime="20210502 18:50:28.961"/>
+</test>
+<test id="s1-t16" name="16. add myth">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="myth"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:28.972" level="INFO">Clicking element 'xpath://*[@id="myth"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:28.971" endtime="20210502 18:50:30.992"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:28.968" endtime="20210502 18:50:30.993"/>
+</test>
+<test id="s1-t17" name="17. add data">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:mythname</arg>
+<arg>vaccinecausessideeffcts</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:31.003" level="INFO">Typing text 'vaccinecausessideeffcts' into text field 'name:mythname'.</msg>
+<status status="PASS" starttime="20210502 18:50:31.002" endtime="20210502 18:50:34.097"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:mythdes</arg>
+<arg>mightcausefever</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:34.101" level="INFO">Typing text 'mightcausefever' into text field 'name:mythdes'.</msg>
+<status status="PASS" starttime="20210502 18:50:34.100" endtime="20210502 18:50:37.212"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="subm"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:37.215" level="INFO">Clicking element 'xpath://*[@id="subm"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:37.214" endtime="20210502 18:50:39.428"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath://*[@id="navbarNav"]/ul/li[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:39.433" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20210502 18:50:39.430" endtime="20210502 18:50:42.295"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:30.999" endtime="20210502 18:50:42.298"/>
+</test>
+<test id="s1-t18" name="18. add facts">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="fact"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:42.327" level="INFO">Clicking element 'xpath://*[@id="fact"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:42.326" endtime="20210502 18:50:44.315"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:42.314" endtime="20210502 18:50:44.318"/>
+</test>
+<test id="s1-t19" name="19. enter data">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:factname</arg>
+<arg>covidcasesareincreasing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:44.346" level="INFO">Typing text 'covidcasesareincreasing' into text field 'name:factname'.</msg>
+<status status="PASS" starttime="20210502 18:50:44.345" endtime="20210502 18:50:47.425"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:factdes</arg>
+<arg>wearmasktocontrol</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:47.429" level="INFO">Typing text 'wearmasktocontrol' into text field 'name:factdes'.</msg>
+<status status="PASS" starttime="20210502 18:50:47.428" endtime="20210502 18:50:50.473"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath://*[@id="submi"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:50.475" level="INFO">Clicking element 'xpath://*[@id="submi"]'.</msg>
+<status status="PASS" starttime="20210502 18:50:50.474" endtime="20210502 18:50:52.802"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:44.331" endtime="20210502 18:50:52.806"/>
+</test>
+<test id="s1-t20" name="20. Logout">
+<kw name="Click Link" library="Selenium2Library">
+<arg>xpath://*[@id="navbarNav"]/ul/li[4]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210502 18:50:52.833" level="INFO">Clicking link 'xpath://*[@id="navbarNav"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20210502 18:50:52.832" endtime="20210502 18:50:55.957"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:52.815" endtime="20210502 18:50:55.961"/>
+</test>
+<test id="s1-t21" name="21. close Browser">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210502 18:50:55.979" endtime="20210502 18:50:59.116"/>
+</kw>
+<status status="PASS" starttime="20210502 18:50:55.968" endtime="20210502 18:50:59.118"/>
+</test>
+<status status="PASS" starttime="20210502 18:49:30.753" endtime="20210502 18:50:59.129"/>
+</suite>
+<statistics>
+<total>
+<stat pass="21" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="21" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
