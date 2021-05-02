@@ -1,0 +1,28 @@
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 20px; /* Added */
+	margin-top:40px;
+	
+}
+.v{
+    margin-left: 800px;
+}
+.c{
+    margin-left: 50px;
+}
+.card-header {
+	color:#ff0066;
+	font-size: 25px;
+background-color: #ffb3d1;
+}
+table, td, th {
+  border: 1px solid;
+border-color:#ff80b3;
+	padding:15px;
+}
+
+table {
+  width: 100%;
+  background-color:#ffe6f0;
+}
